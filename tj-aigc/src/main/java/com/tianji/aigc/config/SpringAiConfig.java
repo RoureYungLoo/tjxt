@@ -1,8 +1,10 @@
 package com.tianji.aigc.config;
 
 import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatModel;
+import com.tianji.aigc.properties.SessionProperties;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,11 +17,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SpringAiConfig {
 
-    @Bean
-    public ChatClient chatClient(DashScopeChatModel chatModel) {
-        return ChatClient
-                .builder(chatModel) //对话模型对象
-                .defaultAdvisors(new SimpleLoggerAdvisor()) //日志记录器
-                .build();
-    }
+  @Autowired
+  private SessionProperties sessionProperties;
+
+  @Bean
+  public ChatClient chatClient(DashScopeChatModel chatModel) {
+    return ChatClient
+        .builder(chatModel) //对话模型对象
+        .defaultSystem(sessionProperties.getSystem())
+        .defaultAdvisors(new SimpleLoggerAdvisor()) //日志记录器
+        .build();
+  }
 }

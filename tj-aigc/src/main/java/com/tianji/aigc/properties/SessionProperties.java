@@ -12,19 +12,24 @@ import java.util.List;
 @ConfigurationProperties(prefix = "tj.ai.session")
 public class SessionProperties {
 
-    /**
-     * AI助手的标题，用于显示助手的名称或身份。
-     */
-    private String title;
+  /**
+   * AI助手的标题，用于显示助手的名称或身份。
+   */
+  private String title;
 
-    /**
-     * AI助手的描述，简要介绍助手的功能或特点。
-     */
-    private String describe;
+  /**
+   * AI助手的描述，简要介绍助手的功能或特点。
+   */
+  private String describe;
 
-    /**
-     * 示例列表，包含一些使用助手的示例。
-     */
-    private List<SessionVO.Example> examples;
+  /**
+   * 示例列表，包含一些使用助手的示例。
+   */
+  private List<SessionVO.Example> examples;
+
+  /**
+   * 系统提示词, 用于给大模型设置角色等信息
+   */
+  private String system;
 
 }
