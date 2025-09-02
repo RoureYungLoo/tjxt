@@ -12,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * 对话业务实现类
  *
@@ -27,6 +30,9 @@ public class ChatServiceImpl implements ChatService {
   @Autowired
   private IChatSessionService chatSessionService;
 
+  // 会话id, true/false, 通过true/false控制是否继续向前端输出
+  private static Map<String, Boolean> SESSION_MAP = new ConcurrentHashMap<>();
+
   /**
    * 聊天对话
    *
@@ -41,11 +47,20 @@ public class ChatServiceImpl implements ChatService {
       throw new BizIllegalException("会话不存在");
     }
 
+    String sessionId = dto.getSessionId();
     //调用大模型进行对话
     return chatClient.prompt()
         .user(dto.getQuestion())
         .stream()
         .content()
+        // 开始输出
+        .doFirst(() -> SESSION_MAP.put(sessionId, true))
+        // 输出完成
+        .doOnComplete(() -> SESSION_MAP.remove(sessionId))
+        // 输出过程出现error
+        .doOnError(throwable -> SESSION_MAP.remove(sessionId))
+        // 是否继续输出, 前端终止按钮
+        .takeWhile(s -> SESSION_MAP.getOrDefault(sessionId, false))
         .map(x ->
             ChatEventVO.builder().eventData(x).eventType(ChatEventTypeEnum.DATA.getValue())
                 .build())
@@ -53,5 +68,10 @@ public class ChatServiceImpl implements ChatService {
             ChatEventVO.builder()  // 标记输出结束
                 .eventType(ChatEventTypeEnum.STOP.getValue())
                 .build()));
+  }
+
+  @Override
+  public void stop(String sessionId) {
+    SESSION_MAP.put(sessionId, false);
   }
 }

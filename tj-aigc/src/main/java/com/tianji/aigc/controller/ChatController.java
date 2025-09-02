@@ -22,17 +22,28 @@ import reactor.core.publisher.Flux;
 @RequestMapping("/chat")
 public class ChatController {
 
-    @Autowired
-    private ChatService chatService;
+  @Autowired
+  private ChatService chatService;
 
-    /**
-     * 聊天接口（流式输出）
-     * @param dto
-     * @return
-     */
-    @NoWrapper //标记结果不进行包装
-    @PostMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<ChatEventVO> chat(@RequestBody ChatDTO dto) {
-       return chatService.chat(dto);
-    }
+  /**
+   * 聊天接口（流式输出）
+   *
+   * @param dto
+   * @return
+   */
+  @NoWrapper //标记结果不进行包装
+  @PostMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE /* text/event-stream */)
+  public Flux<ChatEventVO> chat(@RequestBody ChatDTO dto) {
+    return chatService.chat(dto);
+  }
+
+  /**
+   * 停止输出
+   *
+   * @param sessionId
+   */
+  @PostMapping("/stop")
+  public void stop(String sessionId) {
+    chatService.stop(sessionId);
+  }
 }

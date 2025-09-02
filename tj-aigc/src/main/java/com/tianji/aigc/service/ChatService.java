@@ -18,4 +18,10 @@ public interface ChatService {
      * @return
      */
     Flux<ChatEventVO> chat(ChatDTO dto);
+
+    /**
+     * 停止向前端输出, 大模型会依然输出
+     * @param sessionId
+     */
+    void stop(String sessionId);
 }
