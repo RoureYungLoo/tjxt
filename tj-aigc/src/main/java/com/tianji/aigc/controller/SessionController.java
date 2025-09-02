@@ -3,10 +3,9 @@ package com.tianji.aigc.controller;
 import com.tianji.aigc.service.IChatSessionService;
 import com.tianji.aigc.vo.SessionVO;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/session")
@@ -22,5 +21,13 @@ public class SessionController {
     public SessionVO createSession(@RequestParam(value = "n", defaultValue = "3") Integer num) {
         return this.chatSessionService.createSession(num);
     }
+    /**
+     * 热门问题
+     */
+    @GetMapping("/hot")
+    public List<SessionVO.Example> getHotPrompt(@RequestParam(value = "n", defaultValue = "3") Integer num) {
+        return this.chatSessionService.getHotPrompt(num);
+    }
+
 
 }

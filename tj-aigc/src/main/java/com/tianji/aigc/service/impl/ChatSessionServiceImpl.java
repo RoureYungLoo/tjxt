@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -25,36 +26,48 @@ import java.util.List;
 @Service
 public class ChatSessionServiceImpl extends ServiceImpl<ChatSessionMapper, ChatSession> implements IChatSessionService {
 
-    @Autowired
-    private SessionProperties sessionProperties;
+  @Autowired
+  private SessionProperties sessionProperties;
 
-    /**
-     * 新建会话
-     *
-     * @param num
-     * @return
-     */
-    @Override
-    public SessionVO createSession(Integer num) {
-        //1.生成会话ID
-        String sessionId = IdUtil.fastSimpleUUID();
+  /**
+   * 新建会话
+   *
+   * @param num
+   * @return
+   */
+  @Override
+  public SessionVO createSession(Integer num) {
+    //1.生成会话ID
+    String sessionId = IdUtil.fastSimpleUUID();
 
-        //2.保存会话历史
-        ChatSession chatSession = ChatSession.builder().sessionId(sessionId)
-                .userId(UserContext.getUser()).build();
-        this.save(chatSession);
+    //2.保存会话历史
+    ChatSession chatSession = ChatSession.builder().sessionId(sessionId)
+        .userId(UserContext.getUser()).build();
+    this.save(chatSession);
 
-        //3.随机取出3个热门问题
-        List<SessionVO.Example> examples = sessionProperties.getExamples();
-        Collections.shuffle(examples);
+    //3.随机取出3个热门问题
+    List<SessionVO.Example> examples = sessionProperties.getExamples();
+    Collections.shuffle(examples);
 
-        //4.封装响应结果
-        SessionVO sessionVO = SessionVO.builder()
-                .sessionId(sessionId)
-                .describe(sessionProperties.getDescribe())
-                .examples(examples.stream().limit(num).toList())
-                .build();
+    //4.封装响应结果
+    SessionVO sessionVO = SessionVO.builder()
+        .sessionId(sessionId)
+        .describe(sessionProperties.getDescribe())
+        .examples(examples.stream().limit(num).toList())
+        .build();
 
-        return sessionVO;
-    }
+    return sessionVO;
+  }
+
+  @Override
+  public List<SessionVO.Example> getHotPrompt(Integer num) {
+    //3.随机取出3个热门问题
+    List<SessionVO.Example> examples = sessionProperties.getExamples();
+    Collections.shuffle(examples);
+
+    //4.封装响应结果
+    List<SessionVO.Example> exampleList = examples.stream().limit(3).collect(Collectors.toList());
+
+    return exampleList;
+  }
 }
