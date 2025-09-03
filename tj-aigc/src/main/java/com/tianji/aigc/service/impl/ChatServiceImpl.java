@@ -16,6 +16,8 @@ import com.tianji.common.utils.UserContext;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.QuestionAnswerAdvisor;
+import org.springframework.ai.chat.memory.ChatMemory;
+import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +45,9 @@ public class ChatServiceImpl implements ChatService {
   @Autowired
   private VectorStore vectorStore;
 
+  @Autowired
+  private ChatMemory chatMemory;
+
   // 会话id, true/false, 通过true/false控制是否继续向前端输出
   private static Map<String, Boolean> SESSION_MAP = new ConcurrentHashMap<>();
 
@@ -68,6 +73,9 @@ public class ChatServiceImpl implements ChatService {
         .eventType(ChatEventTypeEnum.STOP.getValue())
         .build();
 
+    // bufgix: 前端点击停止按钮, 已渲染的输出没有持久化
+    StringBuffer assistantContent = new StringBuffer();
+
     String sessionId = dto.getSessionId();
     //调用大模型进行对话
     return chatClient.prompt()
@@ -88,11 +96,18 @@ public class ChatServiceImpl implements ChatService {
         .doOnComplete(() -> SESSION_MAP.remove(sessionId))
         // 输出过程出现error
         .doOnError(throwable -> SESSION_MAP.remove(sessionId))
+        //
+        .doOnCancel(() -> {
+          saveToRedis(conversationId, assistantContent.toString());
+        })
         // 是否继续输出, 前端终止按钮
         .takeWhile(s -> SESSION_MAP.getOrDefault(sessionId, false))
-        .map(x ->
-            ChatEventVO.builder().eventData(x).eventType(ChatEventTypeEnum.DATA.getValue())
-                .build())
+        .map(x -> {
+          ChatEventVO chatEventVO = ChatEventVO.builder().eventData(x).eventType(ChatEventTypeEnum.DATA.getValue()).build();
+          // 大模型输出一点, 就添加一点
+          assistantContent.append(x);
+          return chatEventVO;
+        })
         .concatWith(Flux.defer(() -> {
               // 从toolContext中获取courseInfo
               Map<String, Object> resultMap = ToolResultHolder.get(reqeust_id);
@@ -109,6 +124,11 @@ public class ChatServiceImpl implements ChatService {
               return Flux.just(STOP_EVENT);
             })
         );
+  }
+
+  // 记录被打断的会话内容
+  private void saveToRedis(String conversationId, String content) {
+    chatMemory.add(conversationId, new AssistantMessage(content));
   }
 
   @Override

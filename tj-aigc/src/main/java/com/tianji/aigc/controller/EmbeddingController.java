@@ -3,12 +3,10 @@ package com.tianji.aigc.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.embedding.EmbeddingModel;
+import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -44,5 +42,46 @@ public class EmbeddingController {
     vectorStore.add(documentList);
 
     log.info("[向量库添加数据]添加完毕，添加成功{}条", messages.size());
+  }
+
+  /**
+   * 删除向量数据库中的文档
+   *
+   * @param ids
+   */
+  @DeleteMapping
+  public void deleteVectorStore(@RequestParam("ids") List<String> ids) {
+    vectorStore.delete(ids);
+  }
+
+  /**
+   * 内容搜索
+   *
+   * @param keyword
+   * @return
+   */
+  @GetMapping("/search")
+  public List<Document> search(@RequestParam("message") String keyword) {
+    SearchRequest request = SearchRequest.builder()
+        .query(keyword)
+        .topK(999)
+        .build();
+    List<Document> documentList = vectorStore.similaritySearch(request);
+    return documentList;
+  }
+
+  /**
+   * 搜索全部向量数据库
+   *
+   * @return
+   */
+  @GetMapping("/search/all")
+  public List<Document> searchAll() {
+    SearchRequest request = SearchRequest.builder()
+        .query("")
+        .topK(999)
+        .build();
+    List<Document> documentList = vectorStore.similaritySearch(request);
+    return documentList;
   }
 }
