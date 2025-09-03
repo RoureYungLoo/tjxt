@@ -4,6 +4,7 @@ import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatModel;
 import com.tianji.aigc.memory.RedisChatMemory;
 import com.tianji.aigc.properties.SessionProperties;
 import com.tianji.aigc.tools.CourseTool;
+import com.tianji.aigc.tools.OrderTool;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
@@ -28,7 +29,7 @@ public class SpringAiConfig {
   private SessionProperties sessionProperties;
 
   @Bean
-  public ChatClient chatClient(DashScopeChatModel chatModel, RedisChatMemory redisChatMemory, CourseTool courseTool) {
+  public ChatClient chatClient(DashScopeChatModel chatModel, RedisChatMemory redisChatMemory, CourseTool courseTool, OrderTool orderTool) {
     List<Advisor> advisors = new ArrayList<>();
     // 日志记录器
     advisors.add(new SimpleLoggerAdvisor());
@@ -40,7 +41,7 @@ public class SpringAiConfig {
         .defaultSystem(sessionProperties.getSystem())
         .defaultAdvisors(advisors)
         // function / tool calling
-        .defaultTools(courseTool)
+        .defaultTools(courseTool, orderTool)
         .build();
   }
 }

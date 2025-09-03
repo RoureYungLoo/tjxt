@@ -6,8 +6,10 @@ import com.tianji.aigc.entity.ChatSession;
 import com.tianji.aigc.mapper.ChatSessionMapper;
 import com.tianji.aigc.properties.SessionProperties;
 import com.tianji.aigc.service.IChatSessionService;
+import com.tianji.aigc.vo.MessageVO;
 import com.tianji.aigc.vo.SessionVO;
 import com.tianji.common.utils.UserContext;
+import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -69,5 +71,16 @@ public class ChatSessionServiceImpl extends ServiceImpl<ChatSessionMapper, ChatS
     List<SessionVO.Example> exampleList = examples.stream().limit(3).collect(Collectors.toList());
 
     return exampleList;
+  }
+
+  @Autowired
+  private ChatMemory chatMemory;
+
+  /**
+   * 获取会话详情
+   */
+  @Override
+  public List<MessageVO> messageList(String sessionId) {
+    return null;
   }
 }

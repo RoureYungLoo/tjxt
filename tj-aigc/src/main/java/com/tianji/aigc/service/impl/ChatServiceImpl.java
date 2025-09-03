@@ -8,7 +8,7 @@ import com.tianji.aigc.entity.ChatSession;
 import com.tianji.aigc.enums.ChatEventTypeEnum;
 import com.tianji.aigc.service.ChatService;
 import com.tianji.aigc.service.IChatSessionService;
-import com.tianji.aigc.tools.constant.Constant;
+import com.tianji.aigc.tools.constant.ToolConstant;
 import com.tianji.aigc.tools.result.ToolResultHolder;
 import com.tianji.aigc.vo.ChatEventVO;
 import com.tianji.common.exceptions.BizIllegalException;
@@ -69,7 +69,8 @@ public class ChatServiceImpl implements ChatService {
         .advisors(advisorSpec -> advisorSpec.param(AbstractChatMemoryAdvisor.CHAT_MEMORY_CONVERSATION_ID_KEY, conversationId))
         // 把请求ID传给 ToolCalling 上下文
         .toolContext(MapUtil.<String, Object>builder()
-            .put(Constant.REQUEST_ID, reqeust_id)
+            .put(ToolConstant.REQUEST_ID, reqeust_id)
+            .put(ToolConstant.USER_ID, UserContext.getUser())
             .build())
         .stream()
         .content()
