@@ -1,0 +1,21 @@
+package com.tianji.aigc.entity;
+
+import lombok.Data;
+import org.springframework.ai.chat.messages.AssistantMessage;
+import org.springframework.ai.chat.messages.MessageType;
+import org.springframework.ai.chat.messages.ToolResponseMessage;
+import org.springframework.ai.model.Media;
+
+import java.util.List;
+import java.util.Map;
+
+@Data
+public class RedisMessage {
+  private MessageType messageType;
+  private Map<String, Object> metadata = Map.of();
+  private List<Media> media = List.of();
+  private List<AssistantMessage.ToolCall> toolCalls = List.of();
+  private String textContent;
+  private List<ToolResponseMessage.ToolResponse> toolResponses = List.of();
+  private Map<String, Object> params = Map.of();
+}

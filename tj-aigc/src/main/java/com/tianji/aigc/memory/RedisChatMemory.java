@@ -1,10 +1,12 @@
 package com.tianji.aigc.memory;
 
+import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.json.JSONUtil;
+import com.tianji.aigc.entity.RedisMessage;
 import lombok.AllArgsConstructor;
 import org.springframework.ai.chat.memory.ChatMemory;
-import org.springframework.ai.chat.messages.Message;
+import org.springframework.ai.chat.messages.*;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
@@ -33,7 +35,20 @@ public class RedisChatMemory implements ChatMemory {
     if (CollUtil.isEmpty(messages)) {
       return;
     }
-    List<String> msgStrList = messages.stream().map(message -> JSONUtil.toJsonStr(message)).collect(Collectors.toList());
+    // List<String> msgStrList = messages.stream().map(message -> JSONUtil.toJsonStr(message)).collect(Collectors.toList());
+    List<String> msgStrList = messages.stream().map(message -> {
+      // 构建 redisMessage 对象
+      RedisMessage redisMessage = BeanUtil.toBean(message, RedisMessage.class);
+      // 设置消息内容
+      redisMessage.setTextContent(message.getText());
+      // 设置 Tool Calling 相关
+      if (message instanceof AssistantMessage assistantMessage) {
+        redisMessage.setToolCalls(assistantMessage.getToolCalls());
+      } else if (message instanceof ToolResponseMessage toolResponseMessage) {
+        redisMessage.setToolResponses(toolResponseMessage.getResponses());
+      }
+      return JSONUtil.toJsonStr(redisMessage);
+    }).collect(Collectors.toList());
     redisTemplate.opsForList().leftPushAll(getRedisKey(conversationId), msgStrList);
   }
 
@@ -56,7 +71,23 @@ public class RedisChatMemory implements ChatMemory {
       return List.of();
     }
 
-    List<Message> messageList = msgStrList.stream().map(msg -> JSONUtil.toBean(msg, Message.class)).collect(Collectors.toList());
+    //List<Message> messageList = msgStrList.stream().map(msg -> JSONUtil.toBean(msg, Message.class)).collect(Collectors.toList());
+    List<Message> messageList = msgStrList.stream().map(msgStr -> {
+      // 把RedisMessage字符串转为对象
+      RedisMessage redisMessage = JSONUtil.toBean(msgStr, RedisMessage.class);
+      // 根据不同的MessageType，创建不同的Message对象
+      Message message = null;
+      MessageType type = redisMessage.getMessageType();
+      switch (type) {
+        case USER ->
+            message = new UserMessage(type, redisMessage.getTextContent(), redisMessage.getMedia(), redisMessage.getMetadata());
+        case ASSISTANT ->
+            message = new AssistantMessage(redisMessage.getTextContent(), redisMessage.getMetadata(), redisMessage.getToolCalls(), redisMessage.getMedia());
+        case TOOL -> message = new ToolResponseMessage(redisMessage.getToolResponses(), redisMessage.getMetadata());
+        case SYSTEM -> message = new SystemMessage(redisMessage.getTextContent());
+      }
+      return message;
+    }).collect(Collectors.toList());
     return messageList;
   }
 
