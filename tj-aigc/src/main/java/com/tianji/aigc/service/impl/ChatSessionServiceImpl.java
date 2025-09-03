@@ -3,7 +3,7 @@ package com.tianji.aigc.service.impl;
 import cn.hutool.core.util.IdUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tianji.aigc.entity.ChatSession;
-import com.tianji.aigc.enums.MessageTypeEnum;
+import com.tianji.aigc.entity.MyAssitantMessage;
 import com.tianji.aigc.mapper.ChatSessionMapper;
 import com.tianji.aigc.properties.SessionProperties;
 import com.tianji.aigc.service.IChatSessionService;
@@ -94,11 +94,17 @@ public class ChatSessionServiceImpl extends ServiceImpl<ChatSessionMapper, ChatS
     List<Message> messageList = chatMemory.get(UserContext.getUser() + ":" + sessionId, 1000);
     return messageList.stream()
         .filter(message -> message.getMessageType() == MessageType.USER || message.getMessageType() == MessageType.ASSISTANT)
-        .map(message ->
-            MessageVO.builder()
-                .type(MessageTypeEnum.fromValue(message.getMessageType().getValue()))
-                .content(message.getText())
-                .build())
+        .map(message -> {
+          MessageVO.MessageVOBuilder builder = MessageVO.builder();
+          builder
+              .type(message.getMessageType()) // 消息类型
+              .content(message.getText()); // 消息内容
+          // 兼容卡片消息
+          if (message instanceof MyAssitantMessage myAssitantMessage) {
+            builder.param(myAssitantMessage.getParams()); // 卡片参数
+          }
+          return builder.build();
+        })
         .collect(Collectors.toList());
   }
 }

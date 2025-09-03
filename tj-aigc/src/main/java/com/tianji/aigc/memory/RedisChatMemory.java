@@ -2,8 +2,12 @@ package com.tianji.aigc.memory;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
+import com.tianji.aigc.entity.MyAssitantMessage;
 import com.tianji.aigc.entity.RedisMessage;
+import com.tianji.aigc.tools.constant.ToolConstant;
+import com.tianji.aigc.tools.result.ToolResultHolder;
 import lombok.AllArgsConstructor;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.messages.*;
@@ -11,6 +15,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -43,6 +48,12 @@ public class RedisChatMemory implements ChatMemory {
       redisMessage.setTextContent(message.getText());
       // 设置 Tool Calling 相关
       if (message instanceof AssistantMessage assistantMessage) {
+        String messageId = message.getMetadata().get("id").toString();
+        String requestId = ToolResultHolder.get(messageId, ToolConstant.REQUEST_ID).toString();
+        if (StrUtil.isNotBlank(requestId)) {
+          Map<String, Object> params = ToolResultHolder.get(requestId);
+          redisMessage.setParams(params);
+        }
         redisMessage.setToolCalls(assistantMessage.getToolCalls());
       } else if (message instanceof ToolResponseMessage toolResponseMessage) {
         redisMessage.setToolResponses(toolResponseMessage.getResponses());
@@ -82,7 +93,12 @@ public class RedisChatMemory implements ChatMemory {
         case USER ->
             message = new UserMessage(type, redisMessage.getTextContent(), redisMessage.getMedia(), redisMessage.getMetadata());
         case ASSISTANT ->
-            message = new AssistantMessage(redisMessage.getTextContent(), redisMessage.getMetadata(), redisMessage.getToolCalls(), redisMessage.getMedia());
+          // message = new AssistantMessage(redisMessage.getTextContent(), redisMessage.getMetadata(), redisMessage.getToolCalls(), redisMessage.getMedia());
+            message = new MyAssitantMessage(
+                redisMessage.getTextContent(),
+                redisMessage.getMetadata(),
+                redisMessage.getToolCalls(),
+                redisMessage.getParams());
         case TOOL -> message = new ToolResponseMessage(redisMessage.getToolResponses(), redisMessage.getMetadata());
         case SYSTEM -> message = new SystemMessage(redisMessage.getTextContent());
       }

@@ -3,6 +3,7 @@ package com.tianji.aigc.service.impl;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.StrUtil;
 import com.tianji.aigc.dto.ChatDTO;
 import com.tianji.aigc.entity.ChatSession;
 import com.tianji.aigc.enums.ChatEventTypeEnum;
@@ -89,7 +90,8 @@ public class ChatServiceImpl implements ChatService {
             .put(ToolConstant.USER_ID, UserContext.getUser())
             .build())
         .stream()
-        .content()
+        // .content()
+        .chatResponse()
         // 开始输出
         .doFirst(() -> SESSION_MAP.put(sessionId, true))
         // 输出完成
@@ -102,10 +104,18 @@ public class ChatServiceImpl implements ChatService {
         })
         // 是否继续输出, 前端终止按钮
         .takeWhile(s -> SESSION_MAP.getOrDefault(sessionId, false))
-        .map(x -> {
-          ChatEventVO chatEventVO = ChatEventVO.builder().eventData(x).eventType(ChatEventTypeEnum.DATA.getValue()).build();
+        .map(response -> {
+          String finishReason = response.getResult().getMetadata().getFinishReason();
+          if (StrUtil.equals("STOP", finishReason)) {
+            // 消息ID
+            String messageId = response.getMetadata().getId();
+            // 消息ID与请求DI关联 "msg_123456", request_id, "req_4312409813u4tqwtre"
+            ToolResultHolder.put(messageId, ToolConstant.REQUEST_ID, reqeust_id);
+          }
+          String text = response.getResult().getOutput().getText();
+          ChatEventVO chatEventVO = ChatEventVO.builder().eventData(text).eventType(ChatEventTypeEnum.DATA.getValue()).build();
           // 大模型输出一点, 就添加一点
-          assistantContent.append(x);
+          assistantContent.append(text);
           return chatEventVO;
         })
         .concatWith(Flux.defer(() -> {
