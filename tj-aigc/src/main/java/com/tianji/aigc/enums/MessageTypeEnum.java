@@ -17,8 +17,8 @@ public enum MessageTypeEnum {
     this.value = value;
   }
 
-  public static MessageType fromValue(String value) {
-    for (MessageType messageType : MessageType.values()) {
+  public static MessageTypeEnum fromValue(String value) {
+    for (MessageTypeEnum messageType : MessageTypeEnum.values()) {
       if (messageType.getValue().equals(value)) {
         return messageType;
       }

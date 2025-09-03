@@ -3,13 +3,17 @@ package com.tianji.aigc.service.impl;
 import cn.hutool.core.util.IdUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tianji.aigc.entity.ChatSession;
+import com.tianji.aigc.enums.MessageTypeEnum;
 import com.tianji.aigc.mapper.ChatSessionMapper;
 import com.tianji.aigc.properties.SessionProperties;
 import com.tianji.aigc.service.IChatSessionService;
 import com.tianji.aigc.vo.MessageVO;
 import com.tianji.aigc.vo.SessionVO;
+import com.tianji.common.exceptions.BizIllegalException;
 import com.tianji.common.utils.UserContext;
 import org.springframework.ai.chat.memory.ChatMemory;
+import org.springframework.ai.chat.messages.Message;
+import org.springframework.ai.chat.messages.MessageType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -69,7 +73,6 @@ public class ChatSessionServiceImpl extends ServiceImpl<ChatSessionMapper, ChatS
 
     //4.封装响应结果
     List<SessionVO.Example> exampleList = examples.stream().limit(3).collect(Collectors.toList());
-
     return exampleList;
   }
 
@@ -81,6 +84,21 @@ public class ChatSessionServiceImpl extends ServiceImpl<ChatSessionMapper, ChatS
    */
   @Override
   public List<MessageVO> messageList(String sessionId) {
-    return null;
+    // 判断会话ID是否存在
+    ChatSession chatSession = lambdaQuery().eq(ChatSession::getSessionId, sessionId).one();
+    if (chatSession == null) {
+      throw new BizIllegalException("会话不存在");
+    }
+
+    // 获取历史1000条消息
+    List<Message> messageList = chatMemory.get(UserContext.getUser() + ":" + sessionId, 1000);
+    return messageList.stream()
+        .filter(message -> message.getMessageType() == MessageType.USER || message.getMessageType() == MessageType.ASSISTANT)
+        .map(message ->
+            MessageVO.builder()
+                .type(MessageTypeEnum.fromValue(message.getMessageType().getValue()))
+                .content(message.getText())
+                .build())
+        .collect(Collectors.toList());
   }
 }

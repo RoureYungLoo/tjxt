@@ -24,5 +24,10 @@ public interface IChatSessionService extends IService<ChatSession> {
    */
   List<SessionVO.Example> getHotPrompt(Integer num);
 
+  /**
+   * 查询回话详情
+   * @param sessionId
+   * @return
+   */
   List<MessageVO> messageList(String sessionId);
 }
