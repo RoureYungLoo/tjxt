@@ -7,7 +7,9 @@ import com.tianji.aigc.service.ChatService;
 import com.tianji.aigc.service.IChatSessionService;
 import com.tianji.aigc.vo.ChatEventVO;
 import com.tianji.common.exceptions.BizIllegalException;
+import com.tianji.common.utils.UserContext;
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -47,10 +49,13 @@ public class ChatServiceImpl implements ChatService {
       throw new BizIllegalException("会话不存在");
     }
 
+    String conversationId = UserContext.getUser() + ":" + dto.getSessionId();
+
     String sessionId = dto.getSessionId();
     //调用大模型进行对话
     return chatClient.prompt()
         .user(dto.getQuestion())
+        .advisors(advisorSpec -> advisorSpec.param(AbstractChatMemoryAdvisor.CHAT_MEMORY_CONVERSATION_ID_KEY, conversationId))
         .stream()
         .content()
         // 开始输出

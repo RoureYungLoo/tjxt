@@ -1,12 +1,18 @@
 package com.tianji.aigc.config;
 
 import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatModel;
+import com.tianji.aigc.memory.RedisChatMemory;
 import com.tianji.aigc.properties.SessionProperties;
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
+import org.springframework.ai.chat.client.advisor.api.Advisor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * SpringAI配置类
@@ -21,11 +27,17 @@ public class SpringAiConfig {
   private SessionProperties sessionProperties;
 
   @Bean
-  public ChatClient chatClient(DashScopeChatModel chatModel) {
+  public ChatClient chatClient(DashScopeChatModel chatModel, RedisChatMemory redisChatMemory) {
+    List<Advisor> advisors = new ArrayList<>();
+    // 日志记录器
+    advisors.add(new SimpleLoggerAdvisor());
+    // 基于 Redis 的会话记忆
+    advisors.add(new MessageChatMemoryAdvisor(redisChatMemory));
     return ChatClient
-        .builder(chatModel) //对话模型对象
+        //对话模型对象
+        .builder(chatModel)
         .defaultSystem(sessionProperties.getSystem())
-        .defaultAdvisors(new SimpleLoggerAdvisor()) //日志记录器
+        .defaultAdvisors(advisors)
         .build();
   }
 }
