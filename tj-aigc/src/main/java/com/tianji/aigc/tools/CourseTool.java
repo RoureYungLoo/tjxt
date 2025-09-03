@@ -1,6 +1,6 @@
 package com.tianji.aigc.tools;
 
-import com.tianji.aigc.tools.constant.Constant;
+import com.tianji.aigc.tools.constant.ToolConstant;
 import com.tianji.aigc.tools.result.CourseInfo;
 import com.tianji.aigc.tools.result.ToolResultHolder;
 import com.tianji.api.client.course.CourseClient;
@@ -24,8 +24,8 @@ public class CourseTool {
   @Autowired
   private CourseClient courseClient;
 
-  @Tool(description = Constant.Tools.QUERY_COURSE_BY_ID)
-  public CourseInfo queryCourseById(@ToolParam(description = Constant.Tool_Param.COURSE_ID) Long id,
+  @Tool(description = ToolConstant.Tools.QUERY_COURSE_BY_ID)
+  public CourseInfo queryCourseById(@ToolParam(description = ToolConstant.Tool_Param.COURSE_ID) Long id,
                                     ToolContext toolContext) {
     log.info("[工具调用]根据课程ID查询课程详情，课程ID：{}", id);
 
@@ -33,7 +33,7 @@ public class CourseTool {
     CourseInfo courseInfo = CourseInfo.of(courseClient.baseInfo(id, true));
 
     // 从toolContext中获取请求ID
-    String requestId = (String) toolContext.getContext().get(Constant.REQUEST_ID);
+    String requestId = (String) toolContext.getContext().get(ToolConstant.REQUEST_ID);
 
     // 封装field
     String field = "courseInfo_" + requestId;

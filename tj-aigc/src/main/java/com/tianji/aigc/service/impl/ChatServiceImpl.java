@@ -15,6 +15,9 @@ import com.tianji.common.exceptions.BizIllegalException;
 import com.tianji.common.utils.UserContext;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor;
+import org.springframework.ai.chat.client.advisor.QuestionAnswerAdvisor;
+import org.springframework.ai.vectorstore.SearchRequest;
+import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -36,6 +39,9 @@ public class ChatServiceImpl implements ChatService {
 
   @Autowired
   private IChatSessionService chatSessionService;
+
+  @Autowired
+  private VectorStore vectorStore;
 
   // 会话id, true/false, 通过true/false控制是否继续向前端输出
   private static Map<String, Boolean> SESSION_MAP = new ConcurrentHashMap<>();
@@ -66,6 +72,8 @@ public class ChatServiceImpl implements ChatService {
     //调用大模型进行对话
     return chatClient.prompt()
         .user(dto.getQuestion())
+        // RAG 增强检索生成
+        .advisors(new QuestionAnswerAdvisor(vectorStore, SearchRequest.builder().query("").topK(999).build()))
         .advisors(advisorSpec -> advisorSpec.param(AbstractChatMemoryAdvisor.CHAT_MEMORY_CONVERSATION_ID_KEY, conversationId))
         // 把请求ID传给 ToolCalling 上下文
         .toolContext(MapUtil.<String, Object>builder()
