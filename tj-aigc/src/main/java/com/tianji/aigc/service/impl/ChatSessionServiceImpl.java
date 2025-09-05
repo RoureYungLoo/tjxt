@@ -1,6 +1,7 @@
 package com.tianji.aigc.service.impl;
 
 import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tianji.aigc.entity.ChatSession;
 import com.tianji.aigc.entity.MyAssitantMessage;
@@ -15,8 +16,10 @@ import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.MessageType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -106,5 +109,27 @@ public class ChatSessionServiceImpl extends ServiceImpl<ChatSessionMapper, ChatS
           return builder.build();
         })
         .collect(Collectors.toList());
+  }
+
+  @Async
+  @Override
+  public void updateSessionTitle(String question, String sessionId, Long userId) {
+    // 查询会话是否存在
+    ChatSession chatSession = lambdaQuery().eq(ChatSession::getUserId, userId)
+        .eq(ChatSession::getSessionId, sessionId).one();
+    if (chatSession == null) {
+      return;
+    }
+
+    // 更新会话title
+    String title = chatSession.getTitle();
+    lambdaUpdate()
+        .eq(ChatSession::getUserId, userId)
+        .eq(ChatSession::getSessionId, sessionId)
+        // title 不存在
+        .set(StrUtil.isBlank(title), ChatSession::getTitle, question)
+        // title 已存在
+        .set(StrUtil.isNotBlank(title), ChatSession::getUpdateTime, LocalDateTime.now())
+        .update();
   }
 }

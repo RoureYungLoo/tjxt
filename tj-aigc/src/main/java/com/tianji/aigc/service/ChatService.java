@@ -24,4 +24,10 @@ public interface ChatService {
      * @param sessionId
      */
     void stop(String sessionId);
+
+    /**
+     * 保存(更新)会话 title
+     */
+
+
 }

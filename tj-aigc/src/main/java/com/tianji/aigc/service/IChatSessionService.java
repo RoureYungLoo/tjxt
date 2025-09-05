@@ -19,6 +19,7 @@ public interface IChatSessionService extends IService<ChatSession> {
 
   /**
    * 查询热门Prompt
+   *
    * @param num 数量
    * @return 会话信息
    */
@@ -26,8 +27,17 @@ public interface IChatSessionService extends IService<ChatSession> {
 
   /**
    * 查询回话详情
+   *
    * @param sessionId
    * @return
    */
   List<MessageVO> messageList(String sessionId);
+
+  /**
+   * 更新会话 title
+   * @param question
+   * @param sessionId
+   * @param userId
+   */
+  void updateSessionTitle(String question, String sessionId, Long userId);
 }

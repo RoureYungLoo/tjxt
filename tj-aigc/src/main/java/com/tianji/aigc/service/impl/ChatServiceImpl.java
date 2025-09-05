@@ -66,6 +66,7 @@ public class ChatServiceImpl implements ChatService {
       throw new BizIllegalException("会话不存在");
     }
 
+
     String conversationId = UserContext.getUser() + ":" + dto.getSessionId();
 
     String reqeust_id = IdUtil.fastSimpleUUID();
@@ -78,6 +79,10 @@ public class ChatServiceImpl implements ChatService {
     StringBuffer assistantContent = new StringBuffer();
 
     String sessionId = dto.getSessionId();
+
+    // 保存会话title, 异步执行
+    chatSessionService.updateSessionTitle(dto.getQuestion(), sessionId, UserContext.getUser());
+
     //调用大模型进行对话
     return chatClient.prompt()
         .user(dto.getQuestion())
