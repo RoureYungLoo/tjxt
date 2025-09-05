@@ -1,13 +1,18 @@
 package com.tianji.aigc.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollStreamUtil;
+import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.tianji.aigc.constant.TimeStrConstant;
 import com.tianji.aigc.entity.ChatSession;
 import com.tianji.aigc.entity.MyAssitantMessage;
 import com.tianji.aigc.mapper.ChatSessionMapper;
 import com.tianji.aigc.properties.SessionProperties;
 import com.tianji.aigc.service.IChatSessionService;
+import com.tianji.aigc.vo.ChatHistoryVO;
 import com.tianji.aigc.vo.MessageVO;
 import com.tianji.aigc.vo.SessionVO;
 import com.tianji.common.exceptions.BizIllegalException;
@@ -19,9 +24,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -131,5 +139,42 @@ public class ChatSessionServiceImpl extends ServiceImpl<ChatSessionMapper, ChatS
         // title 已存在
         .set(StrUtil.isNotBlank(title), ChatSession::getUpdateTime, LocalDateTime.now())
         .update();
+  }
+
+  /**
+   * 查询历史会话列表
+   *
+   * @return
+   */
+  @Override
+  public Map<String, List<ChatHistoryVO>> getChatHistoryList() {
+    // 查询用户最近30条历史会话数据
+    List<ChatSession> latestChatSessionList = this.lambdaQuery()
+        .eq(ChatSession::getUserId, UserContext.getUser())
+        .orderByDesc(ChatSession::getUpdateTime)
+        .last("limit 30")
+        .list();
+
+    if (CollectionUtil.isEmpty(latestChatSessionList)) {
+      return Map.of();
+    }
+
+    // 类型转换
+    List<ChatHistoryVO> chatHistoryVOS = BeanUtil.copyToList(latestChatSessionList, ChatHistoryVO.class);
+
+    // 根据日期分组
+    Map<String, List<ChatHistoryVO>> res = CollStreamUtil.groupByKey(chatHistoryVOS, vo -> {
+      long between = Math.abs(ChronoUnit.DAYS.between(vo.getUpdateTime().toLocalDate(), LocalDate.now()));
+      if (between <= 0) {
+        return TimeStrConstant.TODAY.getValue();
+      } else if (between <= 30) {
+        return TimeStrConstant.THIS_MONTH.getValue();
+      } else if (between <= 365) {
+        return TimeStrConstant.THIS_YEAR.getValue();
+      } else {
+        return TimeStrConstant.OVER_YEAR.getValue();
+      }
+    });
+    return res;
   }
 }
