@@ -3,13 +3,11 @@ package com.tianji.aigc.controller;
 import com.tianji.aigc.dto.ChatDTO;
 import com.tianji.aigc.service.ChatService;
 import com.tianji.aigc.vo.ChatEventVO;
+import com.tianji.aigc.vo.TemplateVO;
 import com.tianji.common.annotations.NoWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 
 /**
@@ -56,5 +54,12 @@ public class ChatController {
   @PostMapping("/text")
   public String chatText(@RequestBody String question) {
     return chatService.chatText(question);
+  }
+
+  private static final TemplateVO TEMPLATE_VO = new TemplateVO();
+
+  @GetMapping("/templates")
+  public TemplateVO getTemplates() {
+    return TEMPLATE_VO;
   }
 }
