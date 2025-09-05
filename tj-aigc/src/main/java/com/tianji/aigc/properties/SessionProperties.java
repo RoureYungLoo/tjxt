@@ -32,4 +32,8 @@ public class SessionProperties {
    */
   private String system;
 
+  /**
+   * 系统提示词
+   */
+  private String text;
 }

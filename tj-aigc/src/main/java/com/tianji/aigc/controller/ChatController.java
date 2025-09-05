@@ -46,4 +46,15 @@ public class ChatController {
   public void stop(String sessionId) {
     chatService.stop(sessionId);
   }
+
+  /**
+   * 文本聊天接口
+   *
+   * @param question
+   * @return
+   */
+  @PostMapping("/text")
+  public String chatText(@RequestBody String question) {
+    return chatService.chatText(question);
+  }
 }

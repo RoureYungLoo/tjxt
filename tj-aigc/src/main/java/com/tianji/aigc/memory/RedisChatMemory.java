@@ -49,11 +49,14 @@ public class RedisChatMemory implements ChatMemory {
       // 设置 Tool Calling 相关
       if (message instanceof AssistantMessage assistantMessage) {
         String messageId = message.getMetadata().get("id").toString();
-        String requestId = ToolResultHolder.get(messageId, ToolConstant.REQUEST_ID).toString();
-        if (StrUtil.isNotBlank(requestId)) {
-          // 设置 卡片 信息
-          Map<String, Object> params = ToolResultHolder.get(requestId);
-          redisMessage.setParams(params);
+        Object requestId = ToolResultHolder.get(messageId, ToolConstant.REQUEST_ID);
+        if (requestId != null) {
+          String requestIdStr = requestId.toString();
+          if (StrUtil.isNotBlank(requestIdStr)) {
+            // 设置 卡片 信息
+            Map<String, Object> params = ToolResultHolder.get(requestIdStr);
+            redisMessage.setParams(params);
+          }
         }
         redisMessage.setToolCalls(assistantMessage.getToolCalls());
       } else if (message instanceof ToolResponseMessage toolResponseMessage) {

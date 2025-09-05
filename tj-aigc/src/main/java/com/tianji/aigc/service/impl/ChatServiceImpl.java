@@ -7,6 +7,7 @@ import cn.hutool.core.util.StrUtil;
 import com.tianji.aigc.dto.ChatDTO;
 import com.tianji.aigc.entity.ChatSession;
 import com.tianji.aigc.enums.ChatEventTypeEnum;
+import com.tianji.aigc.properties.SessionProperties;
 import com.tianji.aigc.service.ChatService;
 import com.tianji.aigc.service.IChatSessionService;
 import com.tianji.aigc.tools.constant.ToolConstant;
@@ -149,5 +150,23 @@ public class ChatServiceImpl implements ChatService {
   @Override
   public void stop(String sessionId) {
     SESSION_MAP.put(sessionId, false);
+  }
+
+  @Autowired
+  private SessionProperties sessionProperties;
+
+  /**
+   * 文本聊天
+   *
+   * @param question
+   * @return
+   */
+  @Override
+  public String chatText(String question) {
+    return chatClient.prompt()
+        .system(s -> s.text(sessionProperties.getText()))
+        .user(question)
+        .call()
+        .content();
   }
 }

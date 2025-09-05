@@ -26,6 +26,13 @@ public interface ChatService {
     void stop(String sessionId);
 
     /**
+     * 文本聊天
+     * @param question
+     * @return
+     */
+    String chatText(String question);
+
+    /**
      * 保存(更新)会话 title
      */
 

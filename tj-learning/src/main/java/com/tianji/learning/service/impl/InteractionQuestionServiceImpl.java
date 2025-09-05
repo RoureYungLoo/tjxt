@@ -28,7 +28,6 @@ import com.tianji.learning.domain.vo.QuestionVO;
 import com.tianji.learning.mapper.InteractionQuestionMapper;
 import com.tianji.learning.mapper.InteractionReplyMapper;
 import com.tianji.learning.service.IInteractionQuestionService;
-import com.tianji.learning.service.IInteractionReplyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -54,6 +53,18 @@ public class InteractionQuestionServiceImpl extends ServiceImpl<InteractionQuest
     private final SearchClient searchClient;
     private final CatalogueClient catalogueClient;
     private final CategoryCache categoryCache;
+
+/*    @Override
+    public InteractionQuestion saveQuestion(QuestionFormDTO questionDTO) {
+        // 1.获取当前登录的用户id
+        Long userId = UserContext.getUser();
+        // 2.数据封装
+        InteractionQuestion question = BeanUtils.copyBean(questionDTO, InteractionQuestion.class);
+        question.setUserId(userId);
+        // 3.写入数据库
+        save(question);
+        return question;
+    }*/
 
     @Override
     public InteractionQuestion saveQuestion(QuestionFormDTO questionDTO) {
