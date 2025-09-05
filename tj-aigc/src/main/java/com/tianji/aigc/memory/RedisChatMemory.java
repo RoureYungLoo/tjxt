@@ -51,6 +51,7 @@ public class RedisChatMemory implements ChatMemory {
         String messageId = message.getMetadata().get("id").toString();
         String requestId = ToolResultHolder.get(messageId, ToolConstant.REQUEST_ID).toString();
         if (StrUtil.isNotBlank(requestId)) {
+          // 设置 卡片 信息
           Map<String, Object> params = ToolResultHolder.get(requestId);
           redisMessage.setParams(params);
         }

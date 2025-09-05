@@ -90,7 +90,7 @@ public class ChatServiceImpl implements ChatService {
             .put(ToolConstant.USER_ID, UserContext.getUser())
             .build())
         .stream()
-        // .content()
+        // .content() // map 中的元素是字符串
         .chatResponse()
         // 开始输出
         .doFirst(() -> SESSION_MAP.put(sessionId, true))
@@ -98,7 +98,7 @@ public class ChatServiceImpl implements ChatService {
         .doOnComplete(() -> SESSION_MAP.remove(sessionId))
         // 输出过程出现error
         .doOnError(throwable -> SESSION_MAP.remove(sessionId))
-        //
+        // 前端停止按钮, 持久化已输出的内容
         .doOnCancel(() -> {
           saveToRedis(conversationId, assistantContent.toString());
         })
@@ -109,7 +109,7 @@ public class ChatServiceImpl implements ChatService {
           if (StrUtil.equals("STOP", finishReason)) {
             // 消息ID
             String messageId = response.getMetadata().getId();
-            // 消息ID与请求DI关联 "msg_123456", request_id, "req_4312409813u4tqwtre"
+            // 消息ID与请求ID关联 "msg_123456", request_id, "req_4312409813u4tqwtre"
             ToolResultHolder.put(messageId, ToolConstant.REQUEST_ID, reqeust_id);
           }
           String text = response.getResult().getOutput().getText();
