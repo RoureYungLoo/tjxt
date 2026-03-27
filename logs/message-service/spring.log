@@ -1,0 +1,207 @@
+10:50:51.390-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] com.tianji.MessageApplication            : The following 1 profile is active: "local"
+10:50:51.413-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-mq.yaml, group=DEFAULT_GROUP] success
+10:50:51.413-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-feign.yaml, group=DEFAULT_GROUP] success
+10:50:51.413-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-logs.yaml, group=DEFAULT_GROUP] success
+10:50:51.414-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-mybatis.yaml, group=DEFAULT_GROUP] success
+10:50:51.414-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-redis.yaml, group=DEFAULT_GROUP] success
+10:50:51.414-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-spring.yaml, group=DEFAULT_GROUP] success
+10:50:51.414-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] config[dataId=message-service.yaml, group=DEFAULT_GROUP] is empty
+10:50:52.312-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+10:50:52.314-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+10:50:52.386-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 0 Redis repository interfaces.
+10:50:52.723-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bdc56d57-ed87-3ff0-9e57-a1ef644b0652
+10:50:52.760-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+10:50:53.123-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+10:50:53.126-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+10:50:53.381-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+10:50:53.400-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+10:50:53.400-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+10:50:53.521-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+10:50:53.522-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2108 ms
+10:50:54.783-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.tianji.message.config.MessageConfig    : 开始初始化执行通知任务的线程池....
+10:50:54.786-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.tianji.message.config.MessageConfig    : 初始化执行通知任务的线程池结束...
+10:50:55.091-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:55.179-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.tianji.message.config.MessageConfig    : 开始初始化短信发送任务的线程池....
+10:50:55.179-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.tianji.message.config.MessageConfig    : 初始化执行短信发送的线程池结束...
+10:50:56.051-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+10:50:56.052-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+10:50:56.112-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+10:50:56.470-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:56.496-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.547-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+10:50:58.611-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:publishNoticeJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2889d997[class com.tianji.message.handler.NoticeJobHandler#publishNotice]
+10:50:58.642-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.653-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.669-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.685-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'exam-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.701-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'learning-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.716-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'promotion-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.730-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'remark-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.742-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'search-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.753-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.768-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+10:50:58.842-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [           main] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback config fail, adminAddresses is null.
+10:50:58.844-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job accessToken is empty. To ensure system security, please set the accessToken.
+10:50:58.997-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+10:50:59.030-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+10:50:59.030-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+10:50:59.132-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP message-service 192.168.150.1:8085 register finished
+10:50:59.229-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [      Thread-30] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+10:50:59.230-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [      Thread-30] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry config fail, appname is null.
+10:50:59.622-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+10:50:59.742-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#51f31fad:0/SimpleConnection@5409305f [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=59682]
+10:50:59.818-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] com.tianji.MessageApplication            : Started MessageApplication in 12.944 seconds (process running for 13.796)
+10:50:59.833-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-mq.yaml, group=DEFAULT_GROUP
+10:50:59.835-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-redis.yaml, group=DEFAULT_GROUP
+10:50:59.835-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=message-service.yaml, group=DEFAULT_GROUP
+10:50:59.837-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-spring.yaml, group=DEFAULT_GROUP
+10:50:59.838-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-feign.yaml, group=DEFAULT_GROUP
+10:50:59.841-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-mybatis.yaml, group=DEFAULT_GROUP
+10:50:59.842-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-logs.yaml, group=DEFAULT_GROUP
+10:50:59.844-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [           main] com.tianji.MessageApplication            : --/
+---------------------------------------------------------------------------------------
+	Application 'message-service' is running! Access URLs:
+	Local: 		http://localhost:8085
+	External: 	http://10.254.2.55:8085
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+12:21:07.356-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [68.150.101:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+12:21:08.329-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@573f95b2: tags=[[amq.ctag-InAJSiJTzgvgQUpNTZVvyw]], channel=Cached Rabbit Channel: AMQChannel(amqp://tjxt@192.168.150.101:5672//tjxt,1), conn: Proxy@3b3639f9 Shared Rabbit Connection: SimpleConnection@5409305f [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=59682], acknowledgeMode=AUTO local queue size=0
+12:21:08.570-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:27.231-[LAPTOP-FPFPK7D7][sys]--ERROR 72328 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.net.SocketException: Software caused connection abort: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1486) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2255) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1479) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.SocketException: Software caused connection abort: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.21.0.jar:5.21.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	... 15 common frames omitted
+13:58:27.386-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:32.440-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@358f2156: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:58:32.444-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:52.749-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#51f31fad:3/SimpleConnection@56a4c8f3 [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=61311]
+16:04:41.903-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [68.150.101:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+16:04:42.917-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5155c9f8: tags=[[amq.ctag-sWl4JwLsAgDcCtePhPgDUg]], channel=Cached Rabbit Channel: AMQChannel(amqp://tjxt@192.168.150.101:5672//tjxt,1), conn: Proxy@3b3639f9 Shared Rabbit Connection: SimpleConnection@56a4c8f3 [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=61311], acknowledgeMode=AUTO local queue size=0
+16:04:42.978-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:05:04.018-[LAPTOP-FPFPK7D7][sys]--ERROR 72328 --- [ntContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1486) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2255) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1479) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.21.0.jar:5.21.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	... 15 common frames omitted
+16:05:04.028-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:05:30.143-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [ntContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+16:05:30.143-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2a5fb50f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+16:05:30.145-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:05:51.180-[LAPTOP-FPFPK7D7][sys]--ERROR 72328 --- [ntContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+16:05:51.180-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:06:17.265-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [ntContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+16:06:17.265-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@55be4bb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+16:06:17.267-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:06:38.306-[LAPTOP-FPFPK7D7][sys]--ERROR 72328 --- [ntContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+16:06:38.306-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:07:04.431-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [ntContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+16:07:04.431-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2385abd8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+16:07:04.433-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-7] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:07:25.481-[LAPTOP-FPFPK7D7][sys]--ERROR 72328 --- [ntContainer#0-7] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+16:07:25.481-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-7] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:07:27.492-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [      Thread-15] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:07:27.492-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [      Thread-13] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:07:27.493-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [       Thread-2] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+16:07:27.493-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [      Thread-15] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:07:27.496-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [       Thread-2] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+16:07:27.501-[LAPTOP-FPFPK7D7][sys]-- WARN 72328 --- [      Thread-13] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:07:27.590-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+16:07:27.590-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ntContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+16:07:46.553-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:07:47.030-[LAPTOP-FPFPK7D7][sys]--ERROR 72328 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : ERR_NACOS_DEREGISTER, de-register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='null', username='******', password='******', endpoint='null', namespace='null', watchDelay=30000, logName='null', service='null', weight=1.0, clusterName='null', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={}, registerEnabled=true, ip='null', networkInterface='', port=-1, secure=false, accessKey='null', secretKey='null', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:624) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:447) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doDeregisterService(NamingGrpcClientProxy.java:308) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.deregisterServiceForEphemeral(NamingGrpcClientProxy.java:293) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.deregisterService(NamingGrpcClientProxy.java:275) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.deregisterService(NamingClientProxyDelegate.java:122) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:211) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:199) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.deregister(NacosServiceRegistry.java:107) ~[spring-cloud-starter-alibaba-nacos-discovery-2023.0.3.2.jar:2023.0.3.2]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.deregister(AbstractAutoServiceRegistration.java:281) ~[spring-cloud-commons-4.1.4.jar:4.1.4]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.stop(AbstractAutoServiceRegistration.java:299) ~[spring-cloud-commons-4.1.4.jar:4.1.4]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.destroy(AbstractAutoServiceRegistration.java:233) ~[spring-cloud-commons-4.1.4.jar:4.1.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.3.5.jar:3.3.5]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.3.5.jar:3.3.5]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:07:47.034-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:07:47.048-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
+16:07:47.050-[LAPTOP-FPFPK7D7][sys]-- INFO 72328 --- [      Thread-30] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.

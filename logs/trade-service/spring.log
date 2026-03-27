@@ -1,0 +1,1188 @@
+11:15:06.939-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.tianji.TradeApplication              : The following 1 profile is active: "local"
+11:15:06.963-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-xxljob.yaml, group=DEFAULT_GROUP] success
+11:15:06.963-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-mq.yaml, group=DEFAULT_GROUP] success
+11:15:06.963-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-feign.yaml, group=DEFAULT_GROUP] success
+11:15:06.963-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-logs.yaml, group=DEFAULT_GROUP] success
+11:15:06.963-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-mybatis.yaml, group=DEFAULT_GROUP] success
+11:15:06.964-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-redis.yaml, group=DEFAULT_GROUP] success
+11:15:06.964-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-spring.yaml, group=DEFAULT_GROUP] success
+11:15:06.964-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=trade-service.yaml, group=DEFAULT_GROUP] success
+11:15:07.957-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:15:07.960-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:15:08.020-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
+11:15:08.340-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a7d22ffa-562c-325d-8fc5-dc4f948f2803
+11:15:08.379-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+11:15:08.697-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+11:15:08.701-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+11:15:09.016-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+11:15:09.036-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:15:09.036-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+11:15:09.139-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:15:09.139-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2175 ms
+11:15:09.478-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:10.317-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:10.348-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'pay-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:10.395-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:10.721-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'promotion-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:10.829-[LAPTOP-FPFPK7D7][sys]--DEBUG 67620 --- [           main] c.t.c.a.redisson.RedissonConfig          : 尝试初始化RedissonClient
+11:15:10.949-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] org.redisson.Version                     : Redisson 3.13.6
+11:15:11.423-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [sson-netty-2-16] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.150.101:6379
+11:15:11.445-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [sson-netty-2-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.150.101:6379
+11:15:11.493-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+11:15:11.494-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+11:15:11.551-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+11:15:11.833-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.720-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+11:15:13.804-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:refundRequestJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@492c1b1b[class com.tianji.trade.handler.RefundJobHandler#handleRefundRequest]
+11:15:13.837-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.851-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.864-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'exam-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.879-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'learning-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.891-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'remark-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.904-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'search-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.917-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.931-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+11:15:13.984-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.xxl.job.core.util.NetUtil            : >>>>>>>>>>> xxl-job, port[9999] is in use.
+11:15:13.984-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.xxl.job.core.util.NetUtil            : >>>>>>>>>>> xxl-job, port[10000] is in use.
+11:15:13.984-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.xxl.job.core.util.NetUtil            : >>>>>>>>>>> xxl-job, port[10001] is in use.
+11:15:13.984-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.xxl.job.core.util.NetUtil            : >>>>>>>>>>> xxl-job, port[10002] is in use.
+11:15:13.984-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.xxl.job.core.util.NetUtil            : >>>>>>>>>>> xxl-job, port[10003] is in use.
+11:15:13.985-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.xxl.job.core.util.NetUtil            : >>>>>>>>>>> xxl-job, port[10004] is in use.
+11:15:13.985-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.xxl.job.core.util.NetUtil            : >>>>>>>>>>> xxl-job, port[10005] is in use.
+11:15:13.985-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.xxl.job.core.util.NetUtil            : >>>>>>>>>>> xxl-job, port[10006] is in use.
+11:15:14.102-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+11:15:14.120-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+11:15:14.120-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+11:15:14.134-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [      Thread-33] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 10007
+11:15:14.220-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.150.1:8088 register finished
+11:15:14.544-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+11:15:14.609-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#c3e5e3c:0/SimpleConnection@61427cd3 [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=60714]
+11:15:14.679-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.tianji.TradeApplication              : Started TradeApplication in 12.708 seconds (process running for 13.451)
+11:15:14.694-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-mq.yaml, group=DEFAULT_GROUP
+11:15:14.695-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-xxljob.yaml, group=DEFAULT_GROUP
+11:15:14.696-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-redis.yaml, group=DEFAULT_GROUP
+11:15:14.697-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-spring.yaml, group=DEFAULT_GROUP
+11:15:14.698-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
+11:15:14.699-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-feign.yaml, group=DEFAULT_GROUP
+11:15:14.700-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-mybatis.yaml, group=DEFAULT_GROUP
+11:15:14.702-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-logs.yaml, group=DEFAULT_GROUP
+11:15:14.704-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [           main] com.tianji.TradeApplication              : --/
+---------------------------------------------------------------------------------------
+	Application 'trade-service' is running! Access URLs:
+	Local: 		http://localhost:8088
+	External: 	http://10.254.2.55:8088
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+12:21:07.411-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [68.150.101:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+12:21:08.367-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@c4ef770: tags=[[amq.ctag-nW2vXISFouYqglTnliK30A]], channel=Cached Rabbit Channel: AMQChannel(amqp://tjxt@192.168.150.101:5672//tjxt,1), conn: Proxy@4d56b7f1 Shared Rabbit Connection: SimpleConnection@61427cd3 [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=60714], acknowledgeMode=AUTO local queue size=0
+12:21:08.367-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2b009051: tags=[[amq.ctag-YspCyH-f0uhWgSypqGBDhA]], channel=Cached Rabbit Channel: AMQChannel(amqp://tjxt@192.168.150.101:5672//tjxt,3), conn: Proxy@4d56b7f1 Shared Rabbit Connection: SimpleConnection@61427cd3 [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=60714], acknowledgeMode=AUTO local queue size=0
+12:21:08.545-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+12:21:08.993-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2fb3c642: tags=[[amq.ctag-OaoXUiYTHEUOhgswXt_nug]], channel=Cached Rabbit Channel: AMQChannel(amqp://tjxt@192.168.150.101:5672//tjxt,2), conn: Proxy@4d56b7f1 Shared Rabbit Connection: null, acknowledgeMode=AUTO local queue size=0
+13:58:27.416-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:27.431-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:27.435-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.net.NoRouteToHostException: No route to host: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1479) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.NoRouteToHostException: No route to host: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.21.0.jar:5.21.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	... 12 common frames omitted
+13:58:27.431-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#2-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.net.NoRouteToHostException: No route to host: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1486) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2255) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1479) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.NoRouteToHostException: No route to host: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.21.0.jar:5.21.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	... 15 common frames omitted
+13:58:27.418-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.net.SocketException: Software caused connection abort: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1486) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2255) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1479) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.SocketException: Software caused connection abort: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.21.0.jar:5.21.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	... 15 common frames omitted
+13:58:27.569-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:27.571-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:27.575-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:33.496-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3d603f61: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:58:33.496-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5dbfe16d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:58:33.496-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@55e837ad: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+13:58:33.500-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+13:58:36.504-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [rRegistryThread] c.xxl.job.core.util.XxlJobRemotingUtil   : Connect timed out
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48) ~[xxl-job-core-2.3.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+13:58:36.516-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='trade-service', registryValue='http://10.254.2.55:10007/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connect timed out), for url : http://192.168.150.101:8880/xxl-job-admin/api/registry, content=null]
+13:58:52.510-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#c3e5e3c:7/SimpleConnection@686b99fb [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=55596]
+13:58:56.750-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x49762093, L:/192.168.150.1:60692 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.231-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x85f49c34, L:/192.168.150.1:60690 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.231-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x3e2e3cd7, L:/192.168.150.1:60686 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.232-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x8f18aeb5, L:/192.168.150.1:60685 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.232-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x9508633a, L:/192.168.150.1:60693 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.233-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x64da87b3, L:/192.168.150.1:60684 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.233-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x215fb311, L:/192.168.150.1:60694 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.233-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x37938bc6, L:/192.168.150.1:60689 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.233-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x4156c02a, L:/192.168.150.1:60688 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.233-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xcbb52168, L:/192.168.150.1:60687 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.234-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x1e884c58, L:/192.168.150.1:60691 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.234-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x81ee1d85, L:/192.168.150.1:60697 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.234-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x49033f04, L:/192.168.150.1:60695 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.234-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x9374d017, L:/192.168.150.1:60696 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.235-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xabdc957b, L:/192.168.150.1:60699 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.235-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xb06ba8d5, L:/192.168.150.1:60701 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.235-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x11c51f69, L:/192.168.150.1:60702 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.235-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x1d78e52d, L:/192.168.150.1:60698 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.235-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xf2d6495c, L:/192.168.150.1:60700 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.235-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x233c1ba3, L:/192.168.150.1:60703 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.235-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x8b538f72, L:/192.168.150.1:60706 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.236-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x296e0254, L:/192.168.150.1:60705 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.236-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x3d17512e, L:/192.168.150.1:60704 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.238-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xa9bd8db1, L:/192.168.150.1:60707 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+13:58:57.238-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x67fe34cc, L:/192.168.150.1:60708 ! R:/192.168.150.101:6379]
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+14:04:13.826-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x7d01f360, L:/192.168.150.1:59216 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.832-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x572472ea, L:/192.168.150.1:59217 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.833-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xc722cdce, L:/192.168.150.1:59223 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.833-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x01b58c76, L:/192.168.150.1:59220 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.834-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x4e36fe2b, L:/192.168.150.1:59214 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.835-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x4bf81af2, L:/192.168.150.1:59219 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.836-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xe0373780, L:/192.168.150.1:59215 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.837-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x1f7151fc, L:/192.168.150.1:59225 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.837-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x71e5cdb8, L:/192.168.150.1:59222 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.838-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x2afe4e70, L:/192.168.150.1:59213 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.838-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x433a5804, L:/192.168.150.1:59212 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.839-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xb37bc661, L:/192.168.150.1:59218 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.839-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x23d5b843, L:/192.168.150.1:59211 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.840-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x78ab9a51, L:/192.168.150.1:59208 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.841-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x2076fb18, L:/192.168.150.1:59224 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.842-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xcb60ca43, L:/192.168.150.1:59210 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.844-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x50c48d5b, L:/192.168.150.1:59221 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.845-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x1d4008f1, L:/192.168.150.1:59201 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.846-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x4bf5e183, L:/192.168.150.1:59204 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.847-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x696a27fa, L:/192.168.150.1:59209 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.848-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x0bd90e2f, L:/192.168.150.1:59205 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.848-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x9d8df91a, L:/192.168.150.1:59207 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.849-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xde960651, L:/192.168.150.1:59203 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.849-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xe8625b14, L:/192.168.150.1:59202 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+14:04:13.849-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x6e63e337, L:/192.168.150.1:59206 - R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+15:03:44.208-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:03:44.219-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:03:44.286-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 62 ms
+15:03:45.126-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]-- INFO 67620 --- [nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:03:45.709-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]-- INFO 67620 --- [nio-8088-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5559e32e
+15:03:45.712-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]-- INFO 67620 --- [nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:03:45.730-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:03:45.768-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:03:45.896-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:03:45.904-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:03:45.905-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:03:45.908-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:03:45.910-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:03:45.910-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:03:45.915-[LAPTOP-FPFPK7D7][d55fd4abf6cb4a598ca98a0d7bed58f9]--DEBUG 67620 --- [nio-8088-exec-1] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:04:29.978-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:04:29.978-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:04:29.979-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:29.979-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:04:29.979-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:04:29.981-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:29.981-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:04:29.981-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:04:29.983-[LAPTOP-FPFPK7D7][2f4d04108552466eba8b0498065d3ce2]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:04:34.488-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:04:34.488-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:04:34.490-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:34.491-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:04:34.492-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:04:34.495-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:34.495-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:04:34.496-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:04:34.497-[LAPTOP-FPFPK7D7][dcb8d2aad1c140ad85864e69ba0a77e9]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:04:41.322-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:04:41.323-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:04:41.325-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:41.325-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:04:41.326-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:04:41.328-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:41.329-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:04:41.329-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:04:41.331-[LAPTOP-FPFPK7D7][950215ecb8d9433a88f5ad8ed1c921ea]--DEBUG 67620 --- [nio-8088-exec-8] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:04:44.925-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:04:44.926-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:04:44.928-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:44.929-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:04:44.929-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:04:44.930-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:44.932-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:04:44.932-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:04:44.934-[LAPTOP-FPFPK7D7][50fd3cbc1a6c4418999a0ba8d683a3f5]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:04:57.697-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:04:57.701-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:04:57.705-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:57.708-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:04:57.708-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:04:57.711-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:04:57.712-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:04:57.713-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:04:57.714-[LAPTOP-FPFPK7D7][9426265c36d442d88526fa97b79b581f]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:05:26.738-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:05:26.738-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:05:26.741-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:05:26.742-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:05:26.742-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:05:26.745-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:05:26.746-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:05:26.746-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:05:26.748-[LAPTOP-FPFPK7D7][fb0d02d17a9445f98db0ac7909b1442a]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:06:30.495-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:06:30.496-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:06:30.497-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:06:30.501-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:06:30.501-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:06:30.506-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:06:30.506-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:06:30.507-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:06:30.508-[LAPTOP-FPFPK7D7][59ed6570fcda4bc3ab5dfa6c5efde6eb]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:07:12.642-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:07:12.643-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:07:12.644-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:07:12.644-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:07:12.645-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:07:12.646-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:07:12.646-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:07:12.646-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:07:12.647-[LAPTOP-FPFPK7D7][2cb9c00b50aa4411adf817422930108c]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:08:41.341-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:08:41.342-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:08:41.344-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:08:41.345-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:08:41.345-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:08:41.347-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:08:41.347-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:08:41.347-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:08:41.349-[LAPTOP-FPFPK7D7][d86884f77c5f4852ab42da61263cc7ad]--DEBUG 67620 --- [nio-8088-exec-2] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:09:05.322-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:09:05.323-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:09:05.324-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:09:05.324-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:09:05.324-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:09:05.325-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:09:05.326-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:09:05.326-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:09:05.327-[LAPTOP-FPFPK7D7][38b1fb44870644d0ac797c4b4a67bea7]--DEBUG 67620 --- [nio-8088-exec-3] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:12:19.083-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:12:19.083-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:12:19.085-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:12:19.085-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:12:19.085-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:12:19.086-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:12:19.087-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:12:19.087-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:12:19.088-[LAPTOP-FPFPK7D7][6a80d60abc14413495f9950684bfd437]--DEBUG 67620 --- [nio-8088-exec-5] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:12:51.130-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:12:51.132-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:12:51.133-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:12:51.134-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:12:51.135-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:12:51.136-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:12:51.136-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:12:51.137-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:12:51.138-[LAPTOP-FPFPK7D7][f5fca0a6eea04855baf99ecb3cca6df8]--DEBUG 67620 --- [nio-8088-exec-7] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:13:00.563-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:13:00.564-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:13:00.566-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:13:00.567-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:13:00.567-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:13:00.568-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:13:00.568-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:13:00.570-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:13:00.570-[LAPTOP-FPFPK7D7][554cb9928c714fc1a692b5365f65f540]--DEBUG 67620 --- [nio-8088-exec-6] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:13:03.643-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:13:03.645-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:13:03.647-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:13:03.648-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:13:03.648-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:13:03.650-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:13:03.650-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:13:03.650-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:13:03.652-[LAPTOP-FPFPK7D7][81427c00e42744629e6202678aabbada]--DEBUG 67620 --- [nio-8088-exec-4] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:13:06.223-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:13:06.223-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:13:06.225-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:13:06.225-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:13:06.226-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:13:06.227-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:13:06.228-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:13:06.228-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:13:06.229-[LAPTOP-FPFPK7D7][76f99b4f560f40f3a55458c47610ac37]--DEBUG 67620 --- [nio-8088-exec-9] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+15:13:48.798-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status IN (?,?,?))
+15:13:48.799-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 2(Integer), 4(Integer), 5(Integer)
+15:13:48.800-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:13:48.801-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : ==>  Preparing: SELECT COUNT( * ) AS total FROM order_detail WHERE (course_id = ? AND status = ?)
+15:13:48.801-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : ==> Parameters: 1549025085494521857(Long), 6(Integer)
+15:13:48.802-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.OrderDetailMapper.selectCount    : <==      Total: 1
+15:13:48.803-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.O.countRealPayAmountByCourseId   : ==>  Preparing: SELECT SUM(real_pay_amount) FROM order_detail WHERE course_id = ?
+15:13:48.803-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.O.countRealPayAmountByCourseId   : ==> Parameters: 1549025085494521857(Long)
+15:13:48.804-[LAPTOP-FPFPK7D7][2b8cd87fc0a64bb5a93de2c4d63fce6f]--DEBUG 67620 --- [io-8088-exec-10] c.t.t.m.O.countRealPayAmountByCourseId   : <==      Total: 1
+16:04:41.644-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [68.150.101:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+16:04:41.809-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@70bfa48f: tags=[[amq.ctag-MqilJTV4b0iTtR_8020sUw]], channel=Cached Rabbit Channel: AMQChannel(amqp://tjxt@192.168.150.101:5672//tjxt,2), conn: Proxy@4d56b7f1 Shared Rabbit Connection: SimpleConnection@686b99fb [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=55596], acknowledgeMode=AUTO local queue size=0
+16:04:41.809-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5291fae7: tags=[[amq.ctag-DQ28SDM0TiBhrDEs-NVLvg]], channel=Cached Rabbit Channel: AMQChannel(amqp://tjxt@192.168.150.101:5672//tjxt,3), conn: Proxy@4d56b7f1 Shared Rabbit Connection: SimpleConnection@686b99fb [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort=55596], acknowledgeMode=AUTO local queue size=0
+16:04:41.885-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:04:42.111-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@51edad9: tags=[[amq.ctag-38YVfNVPHbvnnOfmhGQI7g]], channel=Cached Rabbit Channel: AMQChannel(amqp://tjxt@192.168.150.101:5672//tjxt,1), conn: Proxy@4d56b7f1 Shared Rabbit Connection: null, acknowledgeMode=AUTO local queue size=0
+16:04:43.281-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [rRegistryThread] c.xxl.job.core.util.XxlJobRemotingUtil   : Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:288) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:762) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1709) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1610) ~[na:na]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529) ~[na:na]
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:119) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48) ~[xxl-job-core-2.3.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:04:43.292-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='trade-service', registryValue='http://10.254.2.55:10007/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Read timed out), for url : http://192.168.150.101:8880/xxl-job-admin/api/registry, content=null]
+16:05:02.927-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:05:02.927-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#2-4] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1486) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2255) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1479) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.21.0.jar:5.21.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	... 15 common frames omitted
+16:05:08.032-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x2d538ef2, L:/192.168.150.1:58100 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.034-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x91c3dc63, L:/192.168.150.1:58099 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.034-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x26ba67f3, L:/192.168.150.1:58101 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x193429b0, L:/192.168.150.1:58107 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x677dd63a, L:/192.168.150.1:58104 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xafa6a7f4, L:/192.168.150.1:58109 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x8874a5ef, L:/192.168.150.1:58112 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x1028ad00, L:/192.168.150.1:58110 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x9730910e, L:/192.168.150.1:58111 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x5394a9be, L:/192.168.150.1:58115 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x477a7b7d, L:/192.168.150.1:58116 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x0729a517, L:/192.168.150.1:58113 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xd70c2d66, L:/192.168.150.1:58114 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.035-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xeb8acd98, L:/192.168.150.1:58117 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x2fe1788c, L:/192.168.150.1:58103 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x895e2f0f, L:/192.168.150.1:58122 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xf5f6287a, L:/192.168.150.1:58106 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xe8780ab3, L:/192.168.150.1:58118 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x6adf1189, L:/192.168.150.1:58120 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x5cb44a5c, L:/192.168.150.1:58121 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x666d861d, L:/192.168.150.1:58123 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xcfc4a082, L:/192.168.150.1:58119 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0xd3ae0bcf, L:/192.168.150.1:58105 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x4e52e387, L:/192.168.150.1:58108 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:08.036-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [isson-timer-4-1] o.r.c.handler.PingConnectionHandler      : Unable to send PING command over channel: [id: 0x06c58e0a, L:/192.168.150.1:58102 ! R:/192.168.150.101:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://192.168.150.101:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.13.6.jar:3.13.6]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:713) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:701) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:788) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:501) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:16.305-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [rRegistryThread] c.xxl.job.core.util.XxlJobRemotingUtil   : Connect timed out
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48) ~[xxl-job-core-2.3.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:16.306-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='trade-service', registryValue='http://10.254.2.55:10007/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connect timed out), for url : http://192.168.150.101:8880/xxl-job-admin/api/registry, content=null]
+16:05:23.958-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:05:23.958-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#1-4] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1479) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.21.0.jar:5.21.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	... 12 common frames omitted
+16:05:45.000-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:05:45.000-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1479) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.21.0.jar:5.21.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.21.0.jar:5.21.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.7.jar:3.1.7]
+	... 12 common frames omitted
+16:05:49.320-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [rRegistryThread] c.xxl.job.core.util.XxlJobRemotingUtil   : Connect timed out
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48) ~[xxl-job-core-2.3.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:05:49.321-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='trade-service', registryValue='http://10.254.2.55:10007/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connect timed out), for url : http://192.168.150.101:8880/xxl-job-admin/api/registry, content=null]
+16:06:06.049-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:06:11.113-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [ntContainer#2-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+16:06:11.114-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@39aaf648: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+16:06:22.336-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [rRegistryThread] c.xxl.job.core.util.XxlJobRemotingUtil   : Connect timed out
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48) ~[xxl-job-core-2.3.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:06:22.336-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='trade-service', registryValue='http://10.254.2.55:10007/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connect timed out), for url : http://192.168.150.101:8880/xxl-job-admin/api/registry, content=null]
+16:06:27.096-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:06:32.130-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [ntContainer#1-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+16:06:32.130-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2aeab3e0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+16:06:48.138-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:06:53.214-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [ntContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: no further information
+16:06:53.214-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5013b21e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+16:06:55.343-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [rRegistryThread] c.xxl.job.core.util.XxlJobRemotingUtil   : Connect timed out
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48) ~[xxl-job-core-2.3.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:06:55.344-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='trade-service', registryValue='http://10.254.2.55:10007/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connect timed out), for url : http://192.168.150.101:8880/xxl-job-admin/api/registry, content=null]
+16:07:09.199-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:07:09.199-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#2-5] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+16:07:27.003-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [      Thread-13] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:07:27.003-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [      Thread-15] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:07:27.003-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [       Thread-2] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+16:07:27.004-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [      Thread-15] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:07:27.004-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [       Thread-2] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+16:07:27.009-[LAPTOP-FPFPK7D7][sys]-- WARN 67620 --- [      Thread-13] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:07:28.348-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [rRegistryThread] c.xxl.job.core.util.XxlJobRemotingUtil   : Connect timed out
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42) ~[xxl-job-core-2.3.1.jar:na]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48) ~[xxl-job-core-2.3.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:07:28.349-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='trade-service', registryValue='http://10.254.2.55:10007/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connect timed out), for url : http://192.168.150.101:8880/xxl-job-admin/api/registry, content=null]
+16:07:30.249-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#1-5] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+16:07:30.249-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:07:51.310-[LAPTOP-FPFPK7D7][sys]--ERROR 67620 --- [ntContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+16:07:51.310-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+16:07:51.314-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+16:07:51.314-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-6] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+16:07:51.314-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+16:07:51.314-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#1-6] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+16:07:51.314-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-6] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+16:07:51.314-[LAPTOP-FPFPK7D7][sys]-- INFO 67620 --- [ntContainer#2-6] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.

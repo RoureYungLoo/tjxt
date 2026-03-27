@@ -1,0 +1,371 @@
+10:50:03.496-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] com.tianji.GatewayApplication            : The following 1 profile is active: "local"
+10:50:03.516-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-logs.yaml, group=DEFAULT_GROUP] success
+10:50:03.516-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-redis.yaml, group=DEFAULT_GROUP] success
+10:50:03.516-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-spring.yaml, group=DEFAULT_GROUP] success
+10:50:03.517-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=gateway-service.yaml, group=DEFAULT_GROUP] success
+10:50:04.100-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+10:50:04.102-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+10:50:04.146-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+10:50:04.329-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ace5d2c4-714b-3372-889b-fac526bf98bd
+10:50:04.344-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+10:50:04.503-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+10:50:04.506-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+10:50:04.507-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+10:50:04.508-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+10:50:04.510-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+10:50:05.072-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [hFetchJwkThread] c.t.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+10:50:05.092-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [hFetchJwkThread] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+10:50:05.092-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [hFetchJwkThread] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+10:50:05.234-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [hFetchJwkThread] c.t.a.gateway.util.JwtSignerHolder       : 加载auth服务地址成功，http://192.168.150.1:8081/jwks
+10:50:05.234-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [hFetchJwkThread] c.t.a.gateway.util.JwtSignerHolder       : 尝试加载jwk秘钥
+10:50:05.865-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [hFetchJwkThread] c.t.a.gateway.util.JwtSignerHolder       : 加载jwk秘钥成功！
+10:50:05.865-[LAPTOP-FPFPK7D7][sys]--DEBUG 24680 --- [hFetchJwkThread] c.t.a.gateway.util.JwtSignerHolder       : 销毁加载秘钥线程 AuthFetchJwkThread
+10:50:06.080-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+10:50:06.080-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+10:50:06.080-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+10:50:06.080-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+10:50:06.080-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+10:50:06.081-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+10:50:06.081-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+10:50:06.081-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+10:50:06.081-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+10:50:06.081-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+10:50:06.081-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+10:50:06.081-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+10:50:06.082-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+10:50:06.082-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+10:50:06.707-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+10:50:06.923-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 10010 (http)
+10:50:07.572-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 192.168.150.1:10010 register finished
+10:50:07.649-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] com.tianji.GatewayApplication            : Started GatewayApplication in 8.414 seconds (process running for 9.134)
+10:50:07.657-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-redis.yaml, group=DEFAULT_GROUP
+10:50:07.658-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-spring.yaml, group=DEFAULT_GROUP
+10:50:07.659-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway-service.yaml, group=DEFAULT_GROUP
+10:50:07.660-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-logs.yaml, group=DEFAULT_GROUP
+10:50:07.660-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [           main] com.tianji.GatewayApplication            : --/
+---------------------------------------------------------------------------------------
+	Application 'gateway-service' is running! Access URLs:
+	Local: 		http://localhost:10010
+	External: 	http://10.254.2.55:10010
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+12:21:07.359-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ioEventLoop-5-1] i.lettuce.core.protocol.CommandHandler   : null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255) ~[netty-buffer-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:356) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+13:58:27.446-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [xecutorLoop-3-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /192.168.150.101:6379
+13:58:27.687-[LAPTOP-FPFPK7D7][sys]--ERROR 24680 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:68) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:40) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:38) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:310) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1012) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.lambda$doInvoke$3(LettuceConnection.java:447) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker$Synchronizer.invoke(LettuceInvoker.java:665) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker.just(LettuceInvoker.java:94) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceStringCommands.get(LettuceStringCommands.java:54) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.get(DefaultedRedisConnection.java:284) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.DefaultStringRedisConnection.get(DefaultStringRedisConnection.java:382) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.DefaultValueOperations$1.inRedis(DefaultValueOperations.java:54) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.AbstractOperations$ValueDeserializingRedisCallback.doInRedis(AbstractOperations.java:61) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:411) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:378) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:50) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at com.tianji.authsdk.gateway.util.AuthUtil.currentVersion(AuthUtil.java:143) ~[classes/:na]
+	at com.tianji.authsdk.gateway.util.AuthUtil.refreshTask(AuthUtil.java:154) ~[classes/:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor38.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.13.6.jar:1.13.6]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.1.14.jar:6.1.14]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.internal.ExceptionFactory.createTimeoutException(ExceptionFactory.java:59) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.protocol.CommandExpiryWriter.lambda$null$0(CommandExpiryWriter.java:179) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:96) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.PromiseTask.run(PromiseTask.java:106) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:173) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	... 1 common frames omitted
+13:58:27.989-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: No route to host: no further information: /192.168.150.101:6379
+io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: No route to host: no further information: /192.168.150.101:6379
+Caused by: java.net.NoRouteToHostException: No route to host: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+13:58:28.173-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [xecutorLoop-3-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+13:58:28.262-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: No route to host: no further information: /192.168.150.101:6379
+io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: No route to host: no further information: /192.168.150.101:6379
+Caused by: java.net.NoRouteToHostException: No route to host: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+13:58:33.843-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-14] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+13:58:43.866-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [oEventLoop-5-13] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+13:58:48.044-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-15] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+13:58:51.074-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [oEventLoop-5-14] i.l.core.protocol.ReconnectionHandler    : Reconnected to 192.168.150.101/<unresolved>:6379
+16:04:53.568-[LAPTOP-FPFPK7D7][sys]--ERROR 24680 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+org.springframework.data.redis.RedisSystemException: Redis exception
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:72) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:40) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:38) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:310) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1012) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.lambda$doInvoke$3(LettuceConnection.java:447) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker$Synchronizer.invoke(LettuceInvoker.java:665) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker.just(LettuceInvoker.java:94) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceStringCommands.get(LettuceStringCommands.java:54) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.get(DefaultedRedisConnection.java:284) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.DefaultStringRedisConnection.get(DefaultStringRedisConnection.java:382) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.DefaultValueOperations$1.inRedis(DefaultValueOperations.java:54) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.AbstractOperations$ValueDeserializingRedisCallback.doInRedis(AbstractOperations.java:61) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:411) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:378) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:50) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at com.tianji.authsdk.gateway.util.AuthUtil.currentVersion(AuthUtil.java:143) ~[classes/:na]
+	at com.tianji.authsdk.gateway.util.AuthUtil.refreshTask(AuthUtil.java:154) ~[classes/:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor38.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.13.6.jar:1.13.6]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.1.14.jar:6.1.14]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: io.lettuce.core.RedisException: java.net.SocketException: Connection reset
+	at io.lettuce.core.internal.Exceptions.bubble(Exceptions.java:83) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.internal.Futures.awaitOrCancel(Futures.java:250) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:74) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1010) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	... 29 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255) ~[netty-buffer-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:356) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	... 1 common frames omitted
+16:04:53.651-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [xecutorLoop-3-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /192.168.150.101:6379
+16:05:03.682-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [oEventLoop-5-15] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:05:03.736-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [xecutorLoop-3-9] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:05:13.764-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [oEventLoop-5-16] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:05:13.844-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:05:23.852-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [oEventLoop-5-17] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:05:23.936-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-11] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:05:33.945-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [oEventLoop-5-18] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:05:34.037-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-12] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:05:44.045-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [oEventLoop-5-19] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:05:44.151-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-13] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:05:54.164-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [oEventLoop-5-20] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:05:54.240-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-15] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:06:04.253-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:06:04.448-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-17] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:06:13.614-[LAPTOP-FPFPK7D7][sys]--ERROR 24680 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:68) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:40) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:38) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:310) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1012) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.lambda$doInvoke$3(LettuceConnection.java:447) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker$Synchronizer.invoke(LettuceInvoker.java:665) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker.just(LettuceInvoker.java:94) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceStringCommands.get(LettuceStringCommands.java:54) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.get(DefaultedRedisConnection.java:284) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.DefaultStringRedisConnection.get(DefaultStringRedisConnection.java:382) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.DefaultValueOperations$1.inRedis(DefaultValueOperations.java:54) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.AbstractOperations$ValueDeserializingRedisCallback.doInRedis(AbstractOperations.java:61) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:411) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:378) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:50) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at com.tianji.authsdk.gateway.util.AuthUtil.currentVersion(AuthUtil.java:143) ~[classes/:na]
+	at com.tianji.authsdk.gateway.util.AuthUtil.refreshTask(AuthUtil.java:154) ~[classes/:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor38.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.13.6.jar:1.13.6]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.1.14.jar:6.1.14]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.internal.ExceptionFactory.createTimeoutException(ExceptionFactory.java:59) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.internal.Futures.awaitOrCancel(Futures.java:246) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:74) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1010) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	... 29 common frames omitted
+16:06:14.456-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:06:14.737-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-19] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:06:24.742-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:06:25.346-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-20] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:06:35.362-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:06:36.437-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [xecutorLoop-3-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:06:46.448-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:06:48.537-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [xecutorLoop-3-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:06:58.541-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:07:02.738-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [xecutorLoop-3-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:07:12.741-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:07:20.937-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.150.101/<unresolved>:6379
+16:07:27.536-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [      Thread-15] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:07:27.537-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [      Thread-13] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:07:27.538-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [      Thread-15] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:07:27.538-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [       Thread-2] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+16:07:27.540-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [       Thread-2] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Destruction of the end
+16:07:27.547-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [      Thread-13] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:07:30.945-[LAPTOP-FPFPK7D7][sys]-- WARN 24680 --- [ioEventLoop-5-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [192.168.150.101/<unresolved>:6379]: connection timed out after 10000 ms: /192.168.150.101:6379
+16:07:33.631-[LAPTOP-FPFPK7D7][sys]--ERROR 24680 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:68) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:40) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:38) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:310) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1012) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.lambda$doInvoke$3(LettuceConnection.java:447) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker$Synchronizer.invoke(LettuceInvoker.java:665) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceInvoker.just(LettuceInvoker.java:94) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceStringCommands.get(LettuceStringCommands.java:54) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.get(DefaultedRedisConnection.java:284) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.connection.DefaultStringRedisConnection.get(DefaultStringRedisConnection.java:382) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.DefaultValueOperations$1.inRedis(DefaultValueOperations.java:54) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.AbstractOperations$ValueDeserializingRedisCallback.doInRedis(AbstractOperations.java:61) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:411) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:378) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:50) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	at com.tianji.authsdk.gateway.util.AuthUtil.currentVersion(AuthUtil.java:143) ~[classes/:na]
+	at com.tianji.authsdk.gateway.util.AuthUtil.refreshTask(AuthUtil.java:154) ~[classes/:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor38.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.13.6.jar:1.13.6]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.1.14.jar:6.1.14]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.internal.ExceptionFactory.createTimeoutException(ExceptionFactory.java:59) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.internal.Futures.awaitOrCancel(Futures.java:246) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:74) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.await(LettuceConnection.java:1010) ~[spring-data-redis-3.3.5.jar:3.3.5]
+	... 29 common frames omitted
+16:07:35.776-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:07:36.243-[LAPTOP-FPFPK7D7][sys]--ERROR 24680 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : ERR_NACOS_DEREGISTER, de-register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='null', username='******', password='******', endpoint='null', namespace='null', watchDelay=30000, logName='null', service='null', weight=1.0, clusterName='null', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={}, registerEnabled=true, ip='null', networkInterface='', port=-1, secure=false, accessKey='null', secretKey='null', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:624) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:447) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doDeregisterService(NamingGrpcClientProxy.java:308) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.deregisterServiceForEphemeral(NamingGrpcClientProxy.java:293) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.deregisterService(NamingGrpcClientProxy.java:275) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.deregisterService(NamingClientProxyDelegate.java:122) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:211) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:199) ~[nacos-client-2.4.2.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.deregister(NacosServiceRegistry.java:107) ~[spring-cloud-starter-alibaba-nacos-discovery-2023.0.3.2.jar:2023.0.3.2]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.deregister(AbstractAutoServiceRegistration.java:281) ~[spring-cloud-commons-4.1.4.jar:4.1.4]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.stop(AbstractAutoServiceRegistration.java:299) ~[spring-cloud-commons-4.1.4.jar:4.1.4]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.destroy(AbstractAutoServiceRegistration.java:233) ~[spring-cloud-commons-4.1.4.jar:4.1.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.3.5.jar:3.3.5]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.3.5.jar:3.3.5]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+16:07:36.248-[LAPTOP-FPFPK7D7][sys]-- INFO 24680 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:07:36.288-[LAPTOP-FPFPK7D7][sys]--DEBUG 24680 --- [ionShutdownHook] c.t.a.gateway.util.JwtSignerHolder       : 销毁加载秘钥线程 AuthFetchJwkThread

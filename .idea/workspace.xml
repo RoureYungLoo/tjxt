@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e04df670-8a68-4430-ad9a-a36fbf6451f4" name="Changes" comment="feat: 文本对话-AI润色">
+      <change afterPath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/aigc-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/aigc-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/aigc-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/course-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/course-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/course-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/course-service/spring.log.2025-09-03.1.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/course-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/data-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/data-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/data-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/data-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/exam-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/exam-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/exam-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/exam-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/gateway-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/gateway-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/gateway-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/gateway-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/learning-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/learning-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/learning-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/learning-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/media-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/media-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/media-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/media-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/message-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/message-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/message-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/message-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/pay-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/pay-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/pay-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/pay-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/promotion-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/promotion-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/promotion-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/promotion-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/remark-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/remark-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/remark-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/remark-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/search-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/search-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/search-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/search-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/trade-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/trade-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/trade-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/trade-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/user-service/spring.log.2025-09-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/user-service/spring.log.2025-09-03.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/user-service/spring.log.2025-09-04.0.gz" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop_0903" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\Program Files\apache\apache-maven-3.9.9" />
+        <option name="localRepository" value="F:\m2\repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\Program Files\apache\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="17" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="329JeTb0v2Lt5QAf380GQ8AjtF4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AIGCApplication.executor": "Debug",
+    "Spring Boot.AuthApplication.executor": "Debug",
+    "Spring Boot.CourseApplication.executor": "Debug",
+    "Spring Boot.DataCenterApplication.executor": "Debug",
+    "Spring Boot.ExamApplication.executor": "Debug",
+    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.LearningApplication.executor": "Debug",
+    "Spring Boot.MediaApplication.executor": "Debug",
+    "Spring Boot.MessageApplication.executor": "Debug",
+    "Spring Boot.PayApplication.executor": "Debug",
+    "Spring Boot.PromotionApplication.executor": "Debug",
+    "Spring Boot.RemarkApplication.executor": "Debug",
+    "Spring Boot.SearchApplication.executor": "Debug",
+    "Spring Boot.TradeApplication.executor": "Debug",
+    "Spring Boot.UserApplication.executor": "Debug",
+    "git-widget-placeholder": "develop__0905",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/github",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tianji.learning.service.impl" />
+      <recent name="com.tianji.aigc.enums" />
+      <recent name="com.tianji.aigc.vo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AIGCApplication">
+    <configuration name="AIGCApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tj-aigc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.AIGCApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tianji.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-course" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.CourseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-data" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.DataCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-exam" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.ExamApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LearningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-learning" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.LearningApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-media" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.MediaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-message-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.MessageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-pay-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.PayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PromotionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-promotion" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.PromotionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemarkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-remark" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.RemarkApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.SearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TradeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-trade" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.TradeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tj-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianji.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AuthApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.MessageApplication" />
+      <item itemvalue="Spring Boot.CourseApplication" />
+      <item itemvalue="Spring Boot.DataCenterApplication" />
+      <item itemvalue="Spring Boot.ExamApplication" />
+      <item itemvalue="Spring Boot.LearningApplication" />
+      <item itemvalue="Spring Boot.MediaApplication" />
+      <item itemvalue="Spring Boot.PayApplication" />
+      <item itemvalue="Spring Boot.PromotionApplication" />
+      <item itemvalue="Spring Boot.RemarkApplication" />
+      <item itemvalue="Spring Boot.SearchApplication" />
+      <item itemvalue="Spring Boot.TradeApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.AIGCApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AIGCApplication" />
+        <item itemvalue="Spring Boot.AIGCApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e04df670-8a68-4430-ad9a-a36fbf6451f4" name="Changes" comment="" />
+      <created>1752366934385</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752366934385</updated>
+      <workItem from="1752366936660" duration="243000" />
+      <workItem from="1756826954903" duration="9964000" />
+      <workItem from="1756862638533" duration="21138000" />
+      <workItem from="1757035194725" duration="10212000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: first commit&#10;&#10;first commit">
+      <option name="closed" value="true" />
+      <created>1756827029965</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756827029966</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: first commit&#10;&#10;first commit">
+      <option name="closed" value="true" />
+      <created>1756827395562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756827395562</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 新增: 新建会话&#10;&#10;新建会话">
+      <option name="closed" value="true" />
+      <created>1756830871159</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756830871159</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: 热门问题&#10;&#10;热门问题">
+      <option name="closed" value="true" />
+      <created>1756831377639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756831377639</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: 流式对话&#10;&#10;流式对话">
+      <option name="closed" value="true" />
+      <created>1756831797444</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756831797444</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: system提示词&#10;&#10;system提示词">
+      <option name="closed" value="true" />
+      <created>1756832137193</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756832137193</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: 停止生成&#10;&#10;停止生成">
+      <option name="closed" value="true" />
+      <created>1756832897405</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756832897405</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: 会话记忆&#10;&#10;基于redis的会话记忆">
+      <option name="closed" value="true" />
+      <created>1756862225109</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756862225110</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: 查询课程, 卡片展示&#10;&#10;Tool Calling 查询课程&#10;Tool Calling 卡片展示">
+      <option name="closed" value="true" />
+      <created>1756868269980</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756868269980</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: 修复: 对话记忆序列化时对话内容丢失&#10;&#10;修复: 对话记忆序列化时对话内容丢失">
+      <option name="closed" value="true" />
+      <created>1756869310783</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756869310783</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: 新增: 自动下单&#10;&#10;新增自动下单功能">
+      <option name="closed" value="true" />
+      <created>1756871146748</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756871146748</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: RAG导入文档, 查询文档">
+      <option name="closed" value="true" />
+      <created>1756872897051</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1756872897051</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: 查询对话历史&#10;&#10;根据sessionID查询对话的多轮历史对话">
+      <option name="closed" value="true" />
+      <created>1756879523896</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1756879523896</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: 向量数据库查询&#10;&#10;支持向量数据库查询">
+      <option name="closed" value="true" />
+      <created>1756884683404</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1756884683404</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix: 修复: 对话记忆, 卡片未持久化">
+      <option name="closed" value="true" />
+      <created>1756889056109</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756889056109</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix: 对话记忆 messageType">
+      <option name="closed" value="true" />
+      <created>1756917570768</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1756917570768</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix: 对话记忆 补全注释">
+      <option name="closed" value="true" />
+      <created>1757039449028</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1757039449028</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: 新增会话历史&#10;&#10;新增会话历史">
+      <option name="closed" value="true" />
+      <created>1757040760610</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1757040760610</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix: 会话历史记录的标题&#10;&#10;会话历史记录的标题">
+      <option name="closed" value="true" />
+      <created>1757053827023</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1757053827024</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix: 会话历史记录的标题&#10;&#10;会话历史记录的标题">
+      <option name="closed" value="true" />
+      <created>1757053842011</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1757053842011</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: 文本对话-AI解答问题">
+      <option name="closed" value="true" />
+      <created>1757056518735</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1757056518736</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: 文本对话-AI润色">
+      <option name="closed" value="true" />
+      <created>1757059703450</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1757059703450</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat: first commit&#10;&#10;first commit" />
+    <MESSAGE value="feat: 新增: 新建会话&#10;&#10;新建会话" />
+    <MESSAGE value="feat: 热门问题&#10;&#10;热门问题" />
+    <MESSAGE value="feat: 流式对话&#10;&#10;流式对话" />
+    <MESSAGE value="feat: system提示词&#10;&#10;system提示词" />
+    <MESSAGE value="feat: 停止生成&#10;&#10;停止生成" />
+    <MESSAGE value="feat: 会话记忆&#10;&#10;基于redis的会话记忆" />
+    <MESSAGE value="feat: 查询课程, 卡片展示&#10;&#10;Tool Calling 查询课程&#10;Tool Calling 卡片展示" />
+    <MESSAGE value="fix: 修复: 对话记忆序列化时对话内容丢失&#10;&#10;修复: 对话记忆序列化时对话内容丢失" />
+    <MESSAGE value="feat: 新增: 自动下单&#10;&#10;新增自动下单功能" />
+    <MESSAGE value="feat: RAG导入文档, 查询文档" />
+    <MESSAGE value="feat: 查询对话历史&#10;&#10;根据sessionID查询对话的多轮历史对话" />
+    <MESSAGE value="feat: 向量数据库查询&#10;&#10;支持向量数据库查询" />
+    <MESSAGE value="fix: 修复: 对话记忆, 卡片未持久化" />
+    <MESSAGE value="fix: 对话记忆 messageType" />
+    <MESSAGE value="fix: 对话记忆 补全注释" />
+    <MESSAGE value="feat: 新增会话历史&#10;&#10;新增会话历史" />
+    <MESSAGE value="fix: 会话历史记录的标题&#10;&#10;会话历史记录的标题" />
+    <MESSAGE value="feat: 文本对话-AI解答问题" />
+    <MESSAGE value="feat: 文本对话-AI润色" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 文本对话-AI润色" />
+  </component>
+</project>
